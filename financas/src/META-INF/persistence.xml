@@ -11,6 +11,7 @@
 
 		<!-- entidade mapeada -->
 		<class>ardanuy.financas.modelo.Conta</class>
+		<class>ardanuy.financas.modelo.Movimentacao</class>
 
 		<properties>
 			<!-- dados da conexao -->
