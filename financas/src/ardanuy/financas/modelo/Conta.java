@@ -3,6 +3,7 @@ package ardanuy.financas.modelo;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -18,7 +19,7 @@ public class Conta {
 	private String banco;
 	private String agencia;
 	
-	@OneToMany(mappedBy="conta")
+	@OneToMany(mappedBy="conta", fetch=FetchType.LAZY)
 	private List<Movimentacao> movimentacoes;
 	
 	public List<Movimentacao> getMovimentacoes(){
